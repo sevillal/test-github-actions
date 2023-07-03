@@ -11,7 +11,7 @@ jobs:
     assignIssue:
         name: Assign issue to DRI responsible
         runs-on: ubuntu-latest
-        if: github.repository == 'microsoft/vscode-tools-for-ai'
+        if: github.repository == 'sevillal/test-github-actions'
         steps:
             - uses: actions/checkout@v3
             - name: Created internally
