@@ -43,6 +43,8 @@ jobs:
             - name: Get DRI responsible
               if: steps.proceed.outputs.result == 1
               id: dri
+              env:
+                  DRI_RESPONSIBLE_DEFAULT: sevillal
               run: |
                 echo ::set-output name=result::$(node .github/workflows/dri.js)
               shell: bash
