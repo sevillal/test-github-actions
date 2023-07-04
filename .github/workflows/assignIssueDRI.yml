@@ -45,6 +45,7 @@ jobs:
               id: dri
               env:
                 DRI_RESPONSIBLE_DEFAULT: ${{vars.DRI_RESPONSIBLE_DEFAULT}}
+                DRI_OWNERS: ${{vars.DRI_OWNERS}}
               run: |
                 echo ::set-output name=result::$(node .github/workflows/dri.js)
               shell: bash
